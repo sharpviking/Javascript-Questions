@@ -29,3 +29,36 @@ const closure2 = outerFunction(20);
 
 console.log(closure1(5)); // Output: 15 (10 + 5)
 console.log(closure2(5)); // Output: 25 (20 + 5)
+
+
+function x() {
+    var i = 26;
+    setTimeout(function () {
+        console.log(i)
+    }, 3000);
+
+}
+x();
+
+
+function x() {
+    for (let i = 0; i <= 5; i++) {
+        setTimeout(function () {
+            console.log(i)
+        }, i * 1000)
+    }
+}
+x();
+
+
+function x() {
+    for (let i = 0; i <= 5; i++) {
+        function close(i) {
+            setTimeout(function () {
+                console.log(i)
+            }, i * 1000)
+        }
+        close(i)
+    }
+}
+x();
