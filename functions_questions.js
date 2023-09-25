@@ -15,7 +15,7 @@ const c = function () {
 
 
 // Anonymous function
-function () {
+function (y) {
 
 }
 
