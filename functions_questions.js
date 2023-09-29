@@ -1,11 +1,11 @@
 // Function statement
 function a() {
-    console.log('this is a')
+    console.log('this is a function statement')
 }
 
 // Function Expression
 const c = function () {
-    console.log('This is function expression')
+    console.log('This is a function expression')
 }
 
 //  Difference between Function statement and Function expression is in

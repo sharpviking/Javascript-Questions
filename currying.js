@@ -103,3 +103,22 @@ const totalSum = curry(sum);
 
 console.log(totalSum(26)(10)(11));
 
+function sum(a) {
+    return function (b) {
+        return function (c) {
+            return a + b + c;
+        }
+    }
+}
+
+console.log(sum(26)(11)(10));
+
+function sum(b) {
+    return function (z) {
+        return function (f) {
+            return b + z + f
+        }
+    }
+}
+
+console.log(sum(26, 11, 1991))
